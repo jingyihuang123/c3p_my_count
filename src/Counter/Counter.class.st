@@ -24,6 +24,12 @@ Counter >> decrement [
   count := count + 1
 ]
 
+{ #category : 'API' }
+Counter >> decrementBy2 [
+
+	count := count - 2
+]
+
 { #category : 'accessing' }
 Counter >> hello [ 
 	^'helo'
