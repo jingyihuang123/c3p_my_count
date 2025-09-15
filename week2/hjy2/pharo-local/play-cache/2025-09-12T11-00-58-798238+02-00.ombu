@@ -1,0 +1,31 @@
+OmEntry {
+	#tags : {
+		#timestamp : DateAndTime [ '2025-09-12T11:01:23.359875+02:00' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : 'd'
+}OmEntry {
+	#tags : {
+		#timestamp : DateAndTime [ '2025-09-12T11:01:56.990393+02:00' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : 'Die  new Testintok '
+}OmEntry {
+	#tags : {
+		#timestamp : DateAndTime [ '2025-09-12T11:04:23.101913+02:00' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : 'DICETEST run'
+}OmEntry {
+	#tags : {
+		#timestamp : DateAndTime [ '2025-09-12T11:04:37.630516+02:00' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : 'DICETEST run.'
+}OmEntry {
+	#tags : {
+		#timestamp : DateAndTime [ '2025-09-12T11:05:36.189417+02:00' ],
+		#self : OmReference [ '5' ]
+	},
+	#content : 'DICETEST new Testintok '
+}

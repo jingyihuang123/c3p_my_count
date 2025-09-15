@@ -1,0 +1,245 @@
+OmEntry {
+	#tags : {
+		#prior : OmReference [ 'Pharo13.0-SNAPSHOT-64bit-af10a2ce70.316AE5287FB8', '20' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpProtocolAddition {
+		#behavior : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Number,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Number << #Integer\r\tslots: {};\r\ttag: \'Numbers\';\r\tpackage: \'Kernel\''
+			},
+			#name : #Integer,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Number class << Integer class\r\tslots: {}'
+				},
+				#name : #'Integer class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #Integer
+				},
+				#parent : @6,
+				#content : 'I am a common abstract superclass for all Integer implementations. My implementation subclasses are SmallInteger, LargePositiveInteger, and LargeNegativeInteger.\r\t\rInteger division consists of:\r\t/\texact division, answers a fraction if result is not a whole integer\r\t//\tanswers an Integer, rounded towards negative infinity\r\t\\\\\tis modulo rounded towards negative infinity\r\tquo: truncated division, rounded towards zero',
+				#stamp : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #Kernel,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Numbers,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#protocol : #'as yet unclassified'
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Integer
+			},
+			#name : #D20,
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'D20\r    | handle |\r    handle := DieHandle new.\r    1 to: self do: [ :i | handle addDie: (Die withFaces: 20) ].\r    ^ handle',
+			#stamp : '2025-09-15T17:27:42.491644+02:00',
+			#package : #Kernel
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpProtocolAddition {
+		#behavior : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Number,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Number << #Integer\r\tslots: {};\r\ttag: \'Numbers\';\r\tpackage: \'Kernel\''
+			},
+			#name : #Integer,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Number class << Integer class\r\tslots: {}'
+				},
+				#name : #'Integer class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #Integer
+				},
+				#parent : @6,
+				#content : 'I am a common abstract superclass for all Integer implementations. My implementation subclasses are SmallInteger, LargePositiveInteger, and LargeNegativeInteger.\r\t\rInteger division consists of:\r\t/\texact division, answers a fraction if result is not a whole integer\r\t//\tanswers an Integer, rounded towards negative infinity\r\t\\\\\tis modulo rounded towards negative infinity\r\tquo: truncated division, rounded towards zero',
+				#stamp : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #Kernel,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Numbers,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#protocol : #'+dice'
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Integer
+			},
+			#name : #D20,
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'D20\r    | handle |\r    handle := DieHandle new.\r    1 to: self do: [ :i | handle addDie: (Die withFaces: 20) ].\r    ^ handle',
+			#stamp : '2025-09-15T17:28:42.93425+02:00',
+			#package : #Kernel
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Integer
+			},
+			#name : #D20,
+			#protocol : #'+dice',
+			#sourceCode : 'D20\r    | handle |\r    handle := DieHandle new.\r    1 to: self do: [ :i | handle addDie: (Die withFaces: 20) ].\r    ^ handle',
+			#stamp : '2025-09-15T17:28:42.93425+02:00',
+			#package : #Kernel
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '4' ],
+		#self : OmReference [ '5' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Integer
+			},
+			#name : #D20,
+			#protocol : #'+dice',
+			#sourceCode : 'D20\r    | handle |\r    handle := DieHandle new.\r    1 to: self do: [ :i | handle addDie: (Die withFaces: 20) ].\r    ^ handle',
+			#stamp : '2025-09-15T17:27:42.491644+02:00',
+			#package : #Kernel
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Integer
+			},
+			#name : #D20,
+			#protocol : #'+dice',
+			#sourceCode : 'D20\r    | handle |\r    handle := DieHandle new.\r    1 to: self do: [ :i | handle addDie: (Die withFaces: 20) ].\r    ^ handle',
+			#stamp : '2025-09-15T17:28:42.93425+02:00',
+			#package : #Kernel
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '5' ],
+		#self : OmReference [ '6' ]
+	},
+	#content : EpProtocolAddition {
+		#behavior : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #TestCase,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'TestCase << #DieHandleTest\r\tslots: { #dice };\r\tpackage: \'dice\''
+			},
+			#name : #DieHandleTest,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #DieHandleTest
+					},
+					#name : #dice,
+					#parent : @6
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'TestCase class << DieHandleTest class\r\tslots: {}'
+				},
+				#name : #'DieHandleTest class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #DieHandleTest
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #dice,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#protocol : #'+dice'
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '6' ],
+		#self : OmReference [ '7' ]
+	},
+	#content : EpSessionSnapshot {
+		#imageName : '/home/m1ipint/jingyi.huang.etu/Pharo/images/hjy2/hjy2.image'
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '7' ],
+		#self : OmReference [ '8' ]
+	},
+	#content : EpSessionSnapshot {
+		#imageName : '/home/m1ipint/jingyi.huang.etu/Pharo/images/hjy2/hjy2.image'
+	}
+}

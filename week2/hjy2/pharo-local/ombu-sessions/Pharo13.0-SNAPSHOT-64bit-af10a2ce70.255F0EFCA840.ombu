@@ -1,0 +1,1647 @@
+OmEntry {
+	#tags : {
+		#prior : OmReference [ 'Pharo13.0-SNAPSHOT-64bit-af10a2ce70.217C57EF4968', '29' ],
+		#self : OmReference [ '1' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : true,
+				#className : #'Die class'
+			},
+			#name : #'withFaces:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'withFaces: a\r |x|.\rx:= self new.\rx faces: a.\r^ x\r\r',
+			#stamp : '2025-09-12T11:27:45.561896+02:00',
+			#package : #dice
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '1' ],
+		#self : OmReference [ '2' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #DICETEST
+			},
+			#name : #testRolling,
+			#protocol : #tests,
+			#sourceCode : 'testRolling\r\r\t| d |\r\td := Die new.\r\t100 timesRepeat: [ self assert: (d roll between: 1 and: 6) ]',
+			#stamp : '2025-09-12T11:18:21.265358+02:00',
+			#package : #dice
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #DICETEST
+			},
+			#name : #testRolling,
+			#protocol : #tests,
+			#sourceCode : 'testRolling\r\r\t| d |\r\td := Die new.\r\t10 timesRepeat: [ self assert: (d roll between: 1 and: 6) ]',
+			#stamp : '2025-09-12T11:28:02.402276+02:00',
+			#package : #dice
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '2' ],
+		#self : OmReference [ '3' ]
+	},
+	#content : EpSessionSnapshot {
+		#imageName : '/home/m1ipint/jingyi.huang.etu/Pharo/images/hjy2/hjy2.image'
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '3' ],
+		#self : OmReference [ '4' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #DICETEST
+			},
+			#name : #testCreationIsOkk,
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'testCreationIsOkk\r\r\tself assert: (Die withFaces: 20) faces equals: 20',
+			#stamp : '2025-09-12T11:47:15.268712+02:00',
+			#package : #dice
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '4' ],
+		#self : OmReference [ '5' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #DICETEST
+			},
+			#name : #testCreationIsOkk,
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'testCreationIsOkk\r\r\tself assert: (Die withFaces: 20) faces equals: 20',
+			#stamp : '2025-09-12T11:47:15.268712+02:00',
+			#package : #dice
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #DICETEST
+			},
+			#name : #testCreationIsOkk,
+			#protocol : #tests,
+			#sourceCode : 'testCreationIsOkk\r\r\tself assert: (Die withFaces: 20) faces equals: 20',
+			#stamp : '2025-09-12T11:47:15.268712+02:00',
+			#package : #dice
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '5' ],
+		#self : OmReference [ '6' ]
+	},
+	#content : EpClassAddition {
+		#class : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #DieHandle\r\tslots: { #dice };\r\tpackage: \'dice\''
+			},
+			#name : #DieHandle,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #DieHandle
+					},
+					#name : #dice,
+					#parent : @6
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << DieHandle class\r\tslots: {}'
+				},
+				#name : #'DieHandle class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #DieHandle
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #dice,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '6' ],
+		#self : OmReference [ '7' ]
+	},
+	#content : EpProtocolAddition {
+		#behavior : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #DieHandle\r\tslots: { #dice };\r\tpackage: \'dice\''
+			},
+			#name : #DieHandle,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #DieHandle
+					},
+					#name : #dice,
+					#parent : @6
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << DieHandle class\r\tslots: {}'
+				},
+				#name : #'DieHandle class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #DieHandle
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #dice,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#protocol : #'as yet unclassified'
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '7' ],
+		#self : OmReference [ '8' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #DieHandle
+			},
+			#name : #initialize,
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'initialize \rsuper initialize .\rdice := OrderedCollection new.\r',
+			#stamp : '2025-09-12T12:02:15.420046+02:00',
+			#package : #dice
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '8' ],
+		#self : OmReference [ '9' ]
+	},
+	#content : EpProtocolAddition {
+		#behavior : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #DieHandle\r\tslots: { #dice };\r\tpackage: \'dice\''
+			},
+			#name : #DieHandle,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #DieHandle
+					},
+					#name : #dice,
+					#parent : @6
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << DieHandle class\r\tslots: {}'
+				},
+				#name : #'DieHandle class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #DieHandle
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #dice,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#protocol : #initialization
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '9' ],
+		#self : OmReference [ '10' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #DieHandle
+			},
+			#name : #initialize,
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'initialize \rsuper initialize .\rdice := OrderedCollection new.\r',
+			#stamp : '2025-09-12T12:02:15.420046+02:00',
+			#package : #dice
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #DieHandle
+			},
+			#name : #initialize,
+			#protocol : #initialization,
+			#sourceCode : 'initialize \rsuper initialize .\rdice := OrderedCollection new.\r',
+			#stamp : '2025-09-12T12:02:15.420046+02:00',
+			#package : #dice
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '10' ],
+		#self : OmReference [ '11' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #DieHandle
+			},
+			#name : #initialize,
+			#protocol : #initialization,
+			#sourceCode : 'initialize \rsuper initialize .\rdice := OrderedCollection new.\r',
+			#stamp : '2025-09-12T12:02:15.420046+02:00',
+			#package : #dice
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #DieHandle
+			},
+			#name : #initialize,
+			#protocol : #initialization,
+			#sourceCode : 'initialize\r\r\tsuper initialize.\r\tdice:= OrderedCollection new',
+			#stamp : '2025-09-12T12:02:19.157209+02:00',
+			#package : #dice
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '11' ],
+		#self : OmReference [ '12' ]
+	},
+	#content : EpProtocolAddition {
+		#behavior : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #DieHandle\r\tslots: { #dice };\r\tpackage: \'dice\''
+			},
+			#name : #DieHandle,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #DieHandle
+					},
+					#name : #dice,
+					#parent : @6
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << DieHandle class\r\tslots: {}'
+				},
+				#name : #'DieHandle class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #DieHandle
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #dice,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#protocol : #'as yet unclassified'
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '12' ],
+		#self : OmReference [ '13' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #DieHandle
+			},
+			#name : #'adddice:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'adddice: q\rdice:= q',
+			#stamp : '2025-09-12T12:03:11.943295+02:00',
+			#package : #dice
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '13' ],
+		#self : OmReference [ '14' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #DieHandle
+			},
+			#name : #'adddice:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'adddice: q\rdice:= q',
+			#stamp : '2025-09-12T12:03:11.943295+02:00',
+			#package : #dice
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #DieHandle
+			},
+			#name : #'adddice:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'adddice: q\r\r\tdice add: q',
+			#stamp : '2025-09-12T12:04:26.290507+02:00',
+			#package : #dice
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '14' ],
+		#self : OmReference [ '15' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #DieHandle
+			},
+			#name : #dicenumber,
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'dicenumber\r^ dice size ',
+			#stamp : '2025-09-12T12:04:31.898907+02:00',
+			#package : #dice
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '15' ],
+		#self : OmReference [ '16' ]
+	},
+	#content : EpSessionSnapshot {
+		#imageName : '/home/m1ipint/jingyi.huang.etu/Pharo/images/hjy2/hjy2.image'
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '16' ],
+		#self : OmReference [ '17' ]
+	},
+	#content : EpClassAddition {
+		#class : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #TestCase,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'TestCase << #DieHandleTest\r\tslots: {};\r\tpackage: \'dice\''
+			},
+			#name : #DieHandleTest,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'TestCase class << DieHandleTest class\r\tslots: {}'
+				},
+				#name : #'DieHandleTest class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #DieHandleTest
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #dice,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '17' ],
+		#self : OmReference [ '18' ]
+	},
+	#content : EpProtocolAddition {
+		#behavior : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #TestCase,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'TestCase << #DieHandleTest\r\tslots: {};\r\tpackage: \'dice\''
+			},
+			#name : #DieHandleTest,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'TestCase class << DieHandleTest class\r\tslots: {}'
+				},
+				#name : #'DieHandleTest class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #DieHandleTest
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #dice,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#protocol : #'as yet unclassified'
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '18' ],
+		#self : OmReference [ '19' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #DieHandleTest
+			},
+			#name : #testCreationAdding,
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'testCreationAdding\r| handle |\rhandle := DieHandle new\raddDie: (Die withFaces: 6);\raddDie: (Die withFaces: 10);\ryourself.\rself assert: handle diceNumber equals: 2.\r',
+			#stamp : '2025-09-12T12:10:27.19866+02:00',
+			#package : #dice
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '19' ],
+		#self : OmReference [ '20' ]
+	},
+	#content : EpProtocolAddition {
+		#behavior : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #TestCase,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'TestCase << #DieHandleTest\r\tslots: {};\r\tpackage: \'dice\''
+			},
+			#name : #DieHandleTest,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'TestCase class << DieHandleTest class\r\tslots: {}'
+				},
+				#name : #'DieHandleTest class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #DieHandleTest
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #dice,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#protocol : #tests
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '20' ],
+		#self : OmReference [ '21' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #DieHandleTest
+			},
+			#name : #testCreationAdding,
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'testCreationAdding\r| handle |\rhandle := DieHandle new\raddDie: (Die withFaces: 6);\raddDie: (Die withFaces: 10);\ryourself.\rself assert: handle diceNumber equals: 2.\r',
+			#stamp : '2025-09-12T12:10:27.19866+02:00',
+			#package : #dice
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #DieHandleTest
+			},
+			#name : #testCreationAdding,
+			#protocol : #tests,
+			#sourceCode : 'testCreationAdding\r| handle |\rhandle := DieHandle new\raddDie: (Die withFaces: 6);\raddDie: (Die withFaces: 10);\ryourself.\rself assert: handle diceNumber equals: 2.\r',
+			#stamp : '2025-09-12T12:10:27.19866+02:00',
+			#package : #dice
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '21' ],
+		#self : OmReference [ '22' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #DieHandleTest
+			},
+			#name : #testCreationAdding,
+			#protocol : #tests,
+			#sourceCode : 'testCreationAdding\r| handle |\rhandle := DieHandle new\raddDie: (Die withFaces: 6);\raddDie: (Die withFaces: 10);\ryourself.\rself assert: handle diceNumber equals: 2.\r',
+			#stamp : '2025-09-12T12:10:27.19866+02:00',
+			#package : #dice
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #DieHandleTest
+			},
+			#name : #testCreationAdding,
+			#protocol : #tests,
+			#sourceCode : 'testCreationAdding\r\r\t| handle |\r\thandle := DieHandle new\r\t\t          adddice: (Die withFaces: 6);\r\t\t          adddice: (Die withFaces: 10);\r\t\t          yourself.\r\tself assert: handle diceNumber equals: 2',
+			#stamp : '2025-09-12T12:11:10.390249+02:00',
+			#package : #dice
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '22' ],
+		#self : OmReference [ '23' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #DieHandleTest
+			},
+			#name : #testCreationAdding,
+			#protocol : #tests,
+			#sourceCode : 'testCreationAdding\r\r\t| handle |\r\thandle := DieHandle new\r\t\t          adddice: (Die withFaces: 6);\r\t\t          adddice: (Die withFaces: 10);\r\t\t          yourself.\r\tself assert: handle diceNumber equals: 2',
+			#stamp : '2025-09-12T12:11:10.390249+02:00',
+			#package : #dice
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #DieHandleTest
+			},
+			#name : #testCreationAdding,
+			#protocol : #tests,
+			#sourceCode : 'testCreationAdding\r\r\t| handle |\r\thandle := DieHandle new\r\t\t          adddice: (Die withFaces: 6);\r\t\t          adddice: (Die withFaces: 10);\r\t\t          yourself.\r\tself assert: handle size equals: 2',
+			#stamp : '2025-09-12T12:12:22.054674+02:00',
+			#package : #dice
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '23' ],
+		#self : OmReference [ '24' ]
+	},
+	#content : EpSessionSnapshot {
+		#imageName : '/home/m1ipint/jingyi.huang.etu/Pharo/images/hjy2/hjy2.image'
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '24' ],
+		#self : OmReference [ '25' ]
+	},
+	#content : EpProtocolAddition {
+		#behavior : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #TestCase,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'TestCase << #DieHandleTest\r\tslots: {};\r\tpackage: \'dice\''
+			},
+			#name : #DieHandleTest,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'TestCase class << DieHandleTest class\r\tslots: {}'
+				},
+				#name : #'DieHandleTest class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #DieHandleTest
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #dice,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#protocol : #'as yet unclassified'
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '25' ],
+		#self : OmReference [ '26' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #DieHandleTest
+			},
+			#name : #testAddingTwiceTheSameDice,
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'testAddingTwiceTheSameDice\r| handle |\rhandle := DieHandle new.\rhandle adddice: (Die withFaces: 6).\rself assert: handle size equals: 1.',
+			#stamp : '2025-09-12T12:17:33.081652+02:00',
+			#package : #dice
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '26' ],
+		#self : OmReference [ '27' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #DieHandleTest
+			},
+			#name : #testAddingTwiceTheSameDice,
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'testAddingTwiceTheSameDice\r| handle |\rhandle := DieHandle new.\rhandle adddice: (Die withFaces: 6).\rself assert: handle size equals: 1.',
+			#stamp : '2025-09-12T12:17:33.081652+02:00',
+			#package : #dice
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #DieHandleTest
+			},
+			#name : #testAddingTwiceTheSameDice,
+			#protocol : #tests,
+			#sourceCode : 'testAddingTwiceTheSameDice\r| handle |\rhandle := DieHandle new.\rhandle adddice: (Die withFaces: 6).\rself assert: handle size equals: 1.',
+			#stamp : '2025-09-12T12:17:33.081652+02:00',
+			#package : #dice
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '27' ],
+		#self : OmReference [ '28' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #DieHandleTest
+			},
+			#name : #testAddingTwiceTheSameDice,
+			#protocol : #tests,
+			#sourceCode : 'testAddingTwiceTheSameDice\r| handle |\rhandle := DieHandle new.\rhandle adddice: (Die withFaces: 6).\rself assert: handle size equals: 1.',
+			#stamp : '2025-09-12T12:17:33.081652+02:00',
+			#package : #dice
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #DieHandleTest
+			},
+			#name : #testAddingTwiceTheSameDice,
+			#protocol : #tests,
+			#sourceCode : 'testAddingTwiceTheSameDice\r\r\t| handle |\r\thandle := DieHandle new.\r\thandle adddice: (Die withFaces: 6).\r\tself assert: handle size equals: 1.\r\thandle adddice: (Die withFaces: 6).\rself assert: handle size equals: 2.',
+			#stamp : '2025-09-12T12:18:51.444235+02:00',
+			#package : #dice
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '28' ],
+		#self : OmReference [ '29' ]
+	},
+	#content : EpClassAddition {
+		#class : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #TestCase,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'TestCase << #DieHandleTest\r\tslots: { #dice };\r\tpackage: \'dice\''
+			},
+			#name : #DieHandleTest,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #DieHandleTest
+					},
+					#name : #dice,
+					#parent : @6
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'TestCase class << DieHandleTest class\r\tslots: {}'
+				},
+				#name : #'DieHandleTest class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #DieHandleTest
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #dice,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '29' ],
+		#self : OmReference [ '30' ]
+	},
+	#content : EpClassModification {
+		#oldClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #TestCase,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'TestCase << #DieHandleTest\r\tslots: {};\r\tpackage: \'dice\''
+			},
+			#name : #DieHandleTest,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'TestCase class << DieHandleTest class\r\tslots: {}'
+				},
+				#name : #'DieHandleTest class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #DieHandleTest
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #dice,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#newClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #TestCase,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'TestCase << #DieHandleTest\r\tslots: { #dice };\r\tpackage: \'dice\''
+			},
+			#name : #DieHandleTest,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #DieHandleTest
+					},
+					#name : #dice,
+					#parent : @24
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'TestCase class << DieHandleTest class\r\tslots: {}'
+				},
+				#name : #'DieHandleTest class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @24
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #DieHandleTest
+				},
+				#parent : @24,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #dice,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '30' ],
+		#self : OmReference [ '31' ]
+	},
+	#content : EpProtocolAddition {
+		#behavior : RGMetaclassDefinition {
+			#annotations : IdentityDictionary {
+				#traitCompositionSource : '{}',
+				#definitionSource : 'TestCase class << DieHandleTest class\r\tslots: {}'
+			},
+			#name : #'DieHandleTest class',
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [ ],
+			#baseClass : RGClassDefinition {
+				#annotations : IdentityDictionary {
+					#superclassName : #TestCase,
+					#traitCompositionSource : '{}',
+					#definitionSource : 'TestCase << #DieHandleTest\r\tslots: { #dice };\r\tpackage: \'dice\''
+				},
+				#name : #DieHandleTest,
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [
+					RGInstanceVariableDefinition {
+						#annotations : IdentityDictionary {
+							#isMeta : false,
+							#className : #DieHandleTest
+						},
+						#name : #dice,
+						#parent : @11
+					}
+				],
+				#metaClass : @6,
+				#comment : RGCommentDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #DieHandleTest
+					},
+					#parent : @11,
+					#content : ''
+				},
+				#classVariables : OrderedCollection [ ],
+				#package : RGPackageDefinition {
+					#name : #dice,
+					#definedClasses : IdentityDictionary { },
+					#definedMethods : IdentityDictionary { },
+					#extensionMethods : IdentityDictionary { }
+				},
+				#packageTag : #Uncategorized,
+				#sharedPools : OrderedCollection [ ]
+			}
+		},
+		#protocol : #'as yet unclassified'
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '31' ],
+		#self : OmReference [ '32' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : true,
+				#className : #'DieHandleTest class'
+			},
+			#name : #testnum,
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'testnum\r| dice |\r^ dice size\r',
+			#stamp : '2025-09-12T12:23:19.986075+02:00',
+			#package : #dice
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '32' ],
+		#self : OmReference [ '33' ]
+	},
+	#content : EpClassAddition {
+		#class : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #TestCase,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'TestCase << #DieHandleTest\r\tslots: { #dice };\r\tpackage: \'dice\''
+			},
+			#name : #DieHandleTest,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #DieHandleTest
+					},
+					#name : #dice,
+					#parent : @6
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'TestCase class << DieHandleTest class\r\tslots: { #dice }'
+				},
+				#name : #'DieHandleTest class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [
+					RGClassInstanceVariableDefinition {
+						#annotations : IdentityDictionary {
+							#isMeta : true,
+							#className : #'DieHandleTest class'
+						},
+						#name : #dice,
+						#parent : @13
+					}
+				],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #DieHandleTest
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #dice,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '33' ],
+		#self : OmReference [ '34' ]
+	},
+	#content : EpClassModification {
+		#oldClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #TestCase,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'TestCase << #DieHandleTest\r\tslots: { #dice };\r\tpackage: \'dice\''
+			},
+			#name : #DieHandleTest,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #DieHandleTest
+					},
+					#name : #dice,
+					#parent : @6
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'TestCase class << DieHandleTest class\r\tslots: {}'
+				},
+				#name : #'DieHandleTest class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #DieHandleTest
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #dice,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#newClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #TestCase,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'TestCase << #DieHandleTest\r\tslots: { #dice };\r\tpackage: \'dice\''
+			},
+			#name : #DieHandleTest,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #DieHandleTest
+					},
+					#name : #dice,
+					#parent : @26
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'TestCase class << DieHandleTest class\r\tslots: { #dice }'
+				},
+				#name : #'DieHandleTest class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [
+					RGClassInstanceVariableDefinition {
+						#annotations : IdentityDictionary {
+							#isMeta : true,
+							#className : #'DieHandleTest class'
+						},
+						#name : #dice,
+						#parent : @33
+					}
+				],
+				#baseClass : @26
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #DieHandleTest
+				},
+				#parent : @26,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #dice,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '34' ],
+		#self : OmReference [ '35' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : true,
+				#className : #'DieHandleTest class'
+			},
+			#name : #testnum,
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'testnum\r| dice |\r^ dice size\r',
+			#stamp : '2025-09-12T12:23:19.986075+02:00',
+			#package : #dice
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : true,
+				#className : #'DieHandleTest class'
+			},
+			#name : #testnum,
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'testnum\r\r\r\t^ dice size',
+			#stamp : '2025-09-12T12:23:32.625036+02:00',
+			#package : #dice
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '35' ],
+		#self : OmReference [ '36' ]
+	},
+	#content : EpClassAddition {
+		#class : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #TestCase,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'TestCase << #DieHandleTest\r\tslots: { #dice };\r\tpackage: \'dice\''
+			},
+			#name : #DieHandleTest,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #DieHandleTest
+					},
+					#name : #dice,
+					#parent : @6
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'TestCase class << DieHandleTest class\r\tslots: {}'
+				},
+				#name : #'DieHandleTest class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #DieHandleTest
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #dice,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '36' ],
+		#self : OmReference [ '37' ]
+	},
+	#content : EpClassModification {
+		#oldClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #TestCase,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'TestCase << #DieHandleTest\r\tslots: { #dice };\r\tpackage: \'dice\''
+			},
+			#name : #DieHandleTest,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #DieHandleTest
+					},
+					#name : #dice,
+					#parent : @6
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'TestCase class << DieHandleTest class\r\tslots: { #dice }'
+				},
+				#name : #'DieHandleTest class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [
+					RGClassInstanceVariableDefinition {
+						#annotations : IdentityDictionary {
+							#isMeta : true,
+							#className : #'DieHandleTest class'
+						},
+						#name : #dice,
+						#parent : @13
+					}
+				],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #DieHandleTest
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #dice,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#newClass : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #TestCase,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'TestCase << #DieHandleTest\r\tslots: { #dice };\r\tpackage: \'dice\''
+			},
+			#name : #DieHandleTest,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #DieHandleTest
+					},
+					#name : #dice,
+					#parent : @28
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'TestCase class << DieHandleTest class\r\tslots: {}'
+				},
+				#name : #'DieHandleTest class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @28
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #DieHandleTest
+				},
+				#parent : @28,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #dice,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '37' ],
+		#self : OmReference [ '38' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : true,
+				#className : #'DieHandleTest class'
+			},
+			#name : #'testnum:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'testnum: u\r \r\t^ u size',
+			#stamp : '2025-09-12T12:26:20.89739+02:00',
+			#package : #dice
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '38' ],
+		#self : OmReference [ '39' ]
+	},
+	#content : EpProtocolAddition {
+		#behavior : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #Die\r\tslots: { #faces };\r\tpackage: \'dice\''
+			},
+			#name : #Die,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #Die
+					},
+					#name : #faces,
+					#parent : @6
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << Die class\r\tslots: {}'
+				},
+				#name : #'Die class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #Die
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #dice,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#protocol : #'as yet unclassified'
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '39' ],
+		#self : OmReference [ '40' ]
+	},
+	#content : EpMethodAddition {
+		#method : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Die
+			},
+			#name : #'printOn:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'printOn: aStream\rsuper printOn: aStream.\raStream nextPutAll: \' (\', faces printString, \')\'',
+			#stamp : '2025-09-12T12:27:41.982051+02:00',
+			#package : #dice
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '40' ],
+		#self : OmReference [ '41' ]
+	},
+	#content : EpProtocolAddition {
+		#behavior : RGClassDefinition {
+			#annotations : IdentityDictionary {
+				#superclassName : #Object,
+				#traitCompositionSource : '{}',
+				#definitionSource : 'Object << #Die\r\tslots: { #faces };\r\tpackage: \'dice\''
+			},
+			#name : #Die,
+			#methods : IdentityDictionary { },
+			#protocols : Set [ ],
+			#instanceVariables : OrderedCollection [
+				RGInstanceVariableDefinition {
+					#annotations : IdentityDictionary {
+						#isMeta : false,
+						#className : #Die
+					},
+					#name : #faces,
+					#parent : @6
+				}
+			],
+			#metaClass : RGMetaclassDefinition {
+				#annotations : IdentityDictionary {
+					#traitCompositionSource : '{}',
+					#definitionSource : 'Object class << Die class\r\tslots: {}'
+				},
+				#name : #'Die class',
+				#methods : IdentityDictionary { },
+				#protocols : Set [ ],
+				#instanceVariables : OrderedCollection [ ],
+				#baseClass : @6
+			},
+			#comment : RGCommentDefinition {
+				#annotations : IdentityDictionary {
+					#isMeta : false,
+					#className : #Die
+				},
+				#parent : @6,
+				#content : ''
+			},
+			#classVariables : OrderedCollection [ ],
+			#package : RGPackageDefinition {
+				#name : #dice,
+				#definedClasses : IdentityDictionary { },
+				#definedMethods : IdentityDictionary { },
+				#extensionMethods : IdentityDictionary { }
+			},
+			#packageTag : #Uncategorized,
+			#sharedPools : OrderedCollection [ ]
+		},
+		#protocol : #printing
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '41' ],
+		#self : OmReference [ '42' ]
+	},
+	#content : EpMethodModification {
+		#oldMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Die
+			},
+			#name : #'printOn:',
+			#protocol : #'as yet unclassified',
+			#sourceCode : 'printOn: aStream\rsuper printOn: aStream.\raStream nextPutAll: \' (\', faces printString, \')\'',
+			#stamp : '2025-09-12T12:27:41.982051+02:00',
+			#package : #dice
+		},
+		#newMethod : RGMethodDefinition {
+			#annotations : IdentityDictionary {
+				#isMeta : false,
+				#className : #Die
+			},
+			#name : #'printOn:',
+			#protocol : #printing,
+			#sourceCode : 'printOn: aStream\rsuper printOn: aStream.\raStream nextPutAll: \' (\', faces printString, \')\'',
+			#stamp : '2025-09-12T12:27:41.982051+02:00',
+			#package : #dice
+		}
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '42' ],
+		#self : OmReference [ '43' ]
+	},
+	#content : EpSessionSnapshot {
+		#imageName : '/home/m1ipint/jingyi.huang.etu/Pharo/images/hjy2/hjy2.image'
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '43' ],
+		#self : OmReference [ '44' ]
+	},
+	#content : EpSessionSnapshot {
+		#imageName : '/home/m1ipint/jingyi.huang.etu/Pharo/images/hjy2/hjy2.image'
+	}
+}OmEntry {
+	#tags : {
+		#prior : OmReference [ '44' ],
+		#self : OmReference [ '45' ]
+	},
+	#content : EpSessionSnapshot {
+		#imageName : '/home/m1ipint/jingyi.huang.etu/Pharo/images/hjy2/hjy2.image'
+	}
+}
